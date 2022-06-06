@@ -1,26 +1,61 @@
-.container { 
-    grid-template-columns: 0.25fr .75fr;
-    grid-template-rows: 20% repeat(10%,8);
-    grid-template-areas:
-      "picture personal-information"
-      "experience-header virgin-atlantic-airlines1"
-      "experience-header virgin-atlantic-airlines2"
-      "education-header virgin-atlantic-training-acadamy"
-      "education-header railegh-high"
-      "additional-qualifictions-header additional-qualification"
-      "honors-header honors"
-      "affiliations-head affiliations"
-      "... ..."
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+
+  grid-template-areas:
+    "picture personal-information"
+    "experience-header experience"
+    "education-header education"
+    "additional-qualifications-header additional-qualifications"
+    "honors-header honors"
+    "affiliations-header affiliations";
 }
 
-.picture {
+#picture {
   grid-area: picture;
 }
 
-.personal-information {
+#personal-information {
   grid-area: personal-information;
 }
 
-.information-labels {
-  grid-area: information-labels;
+#experience-header {
+  grid-area: experience-header;
+}
+
+#experience {
+  grid-area: experience;
+}
+
+#educations-header {
+  grid-area: education-header;
+}
+
+#education {
+  grid-area: education;
+}
+
+#additional-qualifications-header {
+  grid-area: additional-qualifications-header;
+}
+
+#additional-qualifications {
+  grid-area: additional-qualifications;
+}
+
+#honors-header {
+  grid-area: honors-header;
+}
+
+#honors {
+  grid-area: honors;
+}
+
+#affiliations-header {
+  grid-area: affiliations-header;
+}
+
+#affiliations {
+  grid-area: affiliations;
 }
